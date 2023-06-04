@@ -37,7 +37,7 @@
                 <td><?=$row["size_name"]?></td>      
                 <td><?=$row["quantity_in_stock"]?></td>     
                 <td>
-                  <button class="btn btn-danger" style="height:40px" onclick="variationDelete('<?=$row['variation_id']?>')">Hapus</button>
+                  <button class="btn btn-danger" style="height:40px" onclick="if (!confirm('Yakin ingin menghapus?')) { return false } else variationDelete('<?=$row['variation_id']?>')">Hapus</button>
                   <button class="btn btn-primary" style="height:40px"  onclick="variationEditForm('<?=$row['variation_id']?>')">Perbarui</button>
                 </td>
               </tr>

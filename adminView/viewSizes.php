@@ -34,7 +34,7 @@
                     <td> <?=$count?> </td>
                     <td> <?=$row['size_name']?></td>
                     <td>
-                      <button class="btn btn-danger" style="height:40px" onclick="sizeDelete('<?=$row['size_id']?>')">Hapus</button>
+                      <button class="btn btn-danger" style="height:40px" onclick="if (!confirm('Yakin ingin menghapus?')) { return false } else sizeDelete('<?=$row['size_id']?>')">Hapus</button>
                       <button class="btn btn-primary" style="height:40px" onclick="sizeEditForm('<?=$row['size_id']?>')">Perbarui</button>
                     </td>
                   </tr>

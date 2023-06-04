@@ -136,7 +136,7 @@
                       
                     <td><a class="btn btn-primary openPopup" data-href="./adminView/viewEachOrder.php?orderID=<?=$row['order_id']?>" href="javascript:void(0);">Lihat</a></td>
                     <td>
-                      <button class="btn btn-danger" style="height:40px" onclick="orderDelete('<?=$row['order_id']?>')">Hapus</button>
+                      <button class="btn btn-danger" style="height:40px" onclick="if (!confirm('Yakin ingin menghapus?')) { return false } else orderDelete('<?=$row['order_id']?>')">Hapus</button>
                     </td>
                 </tr>
               <?php

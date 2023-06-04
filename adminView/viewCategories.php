@@ -33,7 +33,7 @@
                   <td><?=$count?></td>
                   <td><?=$row["category_name"]?></td>   
                   <td>
-                    <button class="btn btn-danger" style="height:40px" onclick="categoryDelete('<?=$row['category_id']?>')">Hapus</button>
+                    <button class="btn btn-danger" style="height:40px" onclick="if (!confirm('Yakin ingin menghapus?')) { return false } else categoryDelete('<?=$row['category_id']?>')">Hapus</button>
                     <button class="btn btn-primary" style="height:40px" onclick="categoryEditForm('<?=$row['category_id']?>')">Perbarui</button>
                   </td>
                 </tr>

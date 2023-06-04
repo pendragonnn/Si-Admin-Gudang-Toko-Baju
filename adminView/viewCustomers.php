@@ -39,7 +39,7 @@
                   <td><?=$row["contact_no"]?></td>
                   <td><?=$row["registered_at"]?></td>
                   <td>
-                    <button class="btn btn-danger" style="height:40px" onclick="userDelete('<?=$row['user_id']?>')">Hapus</button>
+                    <button class="btn btn-danger" style="height:40px" onclick="if (!confirm('Yakin ingin menghapus?')) { return false } else userDelete('<?=$row['user_id']?>')">Hapus</button>
                     <button class="btn btn-primary" style="height:40px" onclick="userEditForm('<?=$row['user_id']?>')">Perbarui</button>
                   </td>
                 </tr>

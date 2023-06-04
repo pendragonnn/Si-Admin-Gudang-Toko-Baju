@@ -43,7 +43,7 @@
                 <td><?=$row["price"]?></td>     
                 <td>
                   <button class="btn btn-primary" style="height:40px" onclick="itemEditForm('<?=$row['product_id']?>')">Perbarui</button>
-                  <button class="btn btn-danger mt-2" style="height:40px" onclick="itemDelete('<?=$row['product_id']?>')">Hapus</button>
+                  <button class="btn btn-danger mt-2" style="height:40px" onclick="if (!confirm('Yakin ingin menghapus?')) { return false } else itemDelete('<?=$row['product_id']?>')">Hapus</button>
                 </td>
               </tr>
             <?php
