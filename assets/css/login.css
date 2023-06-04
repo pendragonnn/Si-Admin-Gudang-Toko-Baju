@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap');
+
+:root {
+    --kuning: #FEFF86;
+    --biru: #146C94;
+    --biru-muda: #B0DAFF;
+    --metal: #DDE6ED;
+}
+
+* {
+    font-style: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    background-color: var(--kuning) !important; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.containe-login {
+    background-color: var(--metal);
+    border-radius: 16px; 
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containe-login-2 {
+    background-color: var(--biru-muda);
+    border-radius: 16px; 
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.containe-login-3 {
+    background-color: var(--biru);
+    border-radius: 16px; 
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+@media only screen and (max-width: 600px) {
+  .containe-login {
+    background-color: var(--metal);
+    width: 100%;
+  }
+  .containe-login-2 {
+    background-color: var(--biru-muda);
+    width: 100%;
+  }
+  .containe-login-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 16px;
+  }
+
+  h5 {
+    margin-top: 12px !important;
+  }
+}
